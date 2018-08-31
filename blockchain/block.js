@@ -18,7 +18,7 @@ class Block {
       Hash      : ${this.hash.substring(10, 0)}
       Nonce     : ${this.nonce}
       Difficulty: ${this.difficulty}
-      Data      : ${this.data}`;
+      Data      : ${JSON.stringify(this.data)}`;
     }
 
     static genesis() {
